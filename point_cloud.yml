@@ -1,0 +1,33 @@
+name: point_cloud
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyter
+  - jupyterlab=3.*
+  - ipywidgets
+  - numpy
+  - pandas
+  - tqdm 
+  - time
+  
+  # Libaries
+  - scipy
+  - pyvista #3d library
+  - pocl
+  - oclgrind
+  
+  # Use the nvcc_linux-64 meta-package to use system installed NVCC for pytorch, tensor etc
+  - nvcc_linux-64
+  - pytorch::pytorch
+  
+    # data viz
+  - matplotlib
+
+  - pip
+  - pip:
+
+    - opencv-python
+
